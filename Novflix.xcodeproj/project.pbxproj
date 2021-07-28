@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,17 @@
 		D10D40B226B141090059E5D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10D408726B141080059E5D1 /* ContentView.swift */; };
 		D10D40B326B141090059E5D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D10D408826B141090059E5D1 /* Assets.xcassets */; };
 		D10D40B426B141090059E5D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D10D408826B141090059E5D1 /* Assets.xcassets */; };
+		D10D40C426B146FB0059E5D1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10D40C326B146FB0059E5D1 /* HomeView.swift */; };
+		D10D40C526B146FB0059E5D1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10D40C326B146FB0059E5D1 /* HomeView.swift */; };
+		D10D40C826B148980059E5D1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D10D40C726B148980059E5D1 /* Kingfisher */; };
+		D10D40CA26B14ADF0059E5D1 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10D40C926B14ADF0059E5D1 /* Movie.swift */; };
+		D10D40CB26B14ADF0059E5D1 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10D40C926B14ADF0059E5D1 /* Movie.swift */; };
+		D10D40CD26B14B2B0059E5D1 /* StandardHomeMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10D40CC26B14B2B0059E5D1 /* StandardHomeMovie.swift */; };
+		D10D40CE26B14B2B0059E5D1 /* StandardHomeMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10D40CC26B14B2B0059E5D1 /* StandardHomeMovie.swift */; };
+		D10D40D026B14BAB0059E5D1 /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10D40CF26B14BAB0059E5D1 /* GlobalHelpers.swift */; };
+		D10D40D126B14BAB0059E5D1 /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10D40CF26B14BAB0059E5D1 /* GlobalHelpers.swift */; };
+		D10D40D326B14DC00059E5D1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10D40D226B14DC00059E5D1 /* HomeViewModel.swift */; };
+		D10D40D426B14DC00059E5D1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10D40D226B14DC00059E5D1 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +60,11 @@
 		D10D40A826B141090059E5D1 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D10D40AC26B141090059E5D1 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		D10D40AE26B141090059E5D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D10D40C326B146FB0059E5D1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D10D40C926B14ADF0059E5D1 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		D10D40CC26B14B2B0059E5D1 /* StandardHomeMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardHomeMovie.swift; sourceTree = "<group>"; };
+		D10D40CF26B14BAB0059E5D1 /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
+		D10D40D226B14DC00059E5D1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D10D40C826B148980059E5D1 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +137,11 @@
 			isa = PBXGroup;
 			children = (
 				D10D409026B141090059E5D1 /* Info.plist */,
+				D10D40C326B146FB0059E5D1 /* HomeView.swift */,
+				D10D40C926B14ADF0059E5D1 /* Movie.swift */,
+				D10D40CC26B14B2B0059E5D1 /* StandardHomeMovie.swift */,
+				D10D40CF26B14BAB0059E5D1 /* GlobalHelpers.swift */,
+				D10D40D226B14DC00059E5D1 /* HomeViewModel.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -167,6 +189,9 @@
 			dependencies = (
 			);
 			name = "Novflix (iOS)";
+			packageProductDependencies = (
+				D10D40C726B148980059E5D1 /* Kingfisher */,
+			);
 			productName = "Novflix (iOS)";
 			productReference = D10D408D26B141090059E5D1 /* Novflix.app */;
 			productType = "com.apple.product-type.application";
@@ -258,6 +283,9 @@
 				Base,
 			);
 			mainGroup = D10D408026B141080059E5D1;
+			packageReferences = (
+				D10D40C626B148980059E5D1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = D10D408E26B141090059E5D1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -308,7 +336,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D10D40D026B14BAB0059E5D1 /* GlobalHelpers.swift in Sources */,
+				D10D40C426B146FB0059E5D1 /* HomeView.swift in Sources */,
+				D10D40D326B14DC00059E5D1 /* HomeViewModel.swift in Sources */,
 				D10D40B126B141090059E5D1 /* ContentView.swift in Sources */,
+				D10D40CD26B14B2B0059E5D1 /* StandardHomeMovie.swift in Sources */,
+				D10D40CA26B14ADF0059E5D1 /* Movie.swift in Sources */,
 				D10D40AF26B141090059E5D1 /* NovflixApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,7 +350,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D10D40D126B14BAB0059E5D1 /* GlobalHelpers.swift in Sources */,
+				D10D40C526B146FB0059E5D1 /* HomeView.swift in Sources */,
+				D10D40D426B14DC00059E5D1 /* HomeViewModel.swift in Sources */,
 				D10D40B226B141090059E5D1 /* ContentView.swift in Sources */,
+				D10D40CE26B14B2B0059E5D1 /* StandardHomeMovie.swift in Sources */,
+				D10D40CB26B14ADF0059E5D1 /* Movie.swift in Sources */,
 				D10D40B026B141090059E5D1 /* NovflixApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -696,6 +734,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D10D40C626B148980059E5D1 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D10D40C726B148980059E5D1 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D10D40C626B148980059E5D1 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D10D408126B141080059E5D1 /* Project object */;
 }
