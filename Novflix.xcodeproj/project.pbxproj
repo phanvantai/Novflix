@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D10D40A226B141090059E5D1 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10D40A126B141090059E5D1 /* Tests_iOS.swift */; };
+		D10D40AD26B141090059E5D1 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10D40AC26B141090059E5D1 /* Tests_macOS.swift */; };
+		D10D40AF26B141090059E5D1 /* NovflixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10D408626B141080059E5D1 /* NovflixApp.swift */; };
+		D10D40B026B141090059E5D1 /* NovflixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10D408626B141080059E5D1 /* NovflixApp.swift */; };
+		D10D40B126B141090059E5D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10D408726B141080059E5D1 /* ContentView.swift */; };
+		D10D40B226B141090059E5D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10D408726B141080059E5D1 /* ContentView.swift */; };
+		D10D40B326B141090059E5D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D10D408826B141090059E5D1 /* Assets.xcassets */; };
+		D10D40B426B141090059E5D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D10D408826B141090059E5D1 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D10D409E26B141090059E5D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D10D408126B141080059E5D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D10D408C26B141090059E5D1;
+			remoteInfo = "Novflix (iOS)";
+		};
+		D10D40A926B141090059E5D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D10D408126B141080059E5D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D10D409426B141090059E5D1;
+			remoteInfo = "Novflix (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D10D408626B141080059E5D1 /* NovflixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovflixApp.swift; sourceTree = "<group>"; };
+		D10D408726B141080059E5D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D10D408826B141090059E5D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D10D408D26B141090059E5D1 /* Novflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Novflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10D409026B141090059E5D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D10D409526B141090059E5D1 /* Novflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Novflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10D409726B141090059E5D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D10D409826B141090059E5D1 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		D10D409D26B141090059E5D1 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10D40A126B141090059E5D1 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		D10D40A326B141090059E5D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D10D40A826B141090059E5D1 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10D40AC26B141090059E5D1 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		D10D40AE26B141090059E5D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D10D408A26B141090059E5D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10D409226B141090059E5D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10D409A26B141090059E5D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10D40A526B141090059E5D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D10D408026B141080059E5D1 = {
+			isa = PBXGroup;
+			children = (
+				D10D408526B141080059E5D1 /* Shared */,
+				D10D408F26B141090059E5D1 /* iOS */,
+				D10D409626B141090059E5D1 /* macOS */,
+				D10D40A026B141090059E5D1 /* Tests iOS */,
+				D10D40AB26B141090059E5D1 /* Tests macOS */,
+				D10D408E26B141090059E5D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D10D408526B141080059E5D1 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D10D408626B141080059E5D1 /* NovflixApp.swift */,
+				D10D408726B141080059E5D1 /* ContentView.swift */,
+				D10D408826B141090059E5D1 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D10D408E26B141090059E5D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D10D408D26B141090059E5D1 /* Novflix.app */,
+				D10D409526B141090059E5D1 /* Novflix.app */,
+				D10D409D26B141090059E5D1 /* Tests iOS.xctest */,
+				D10D40A826B141090059E5D1 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D10D408F26B141090059E5D1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D10D409026B141090059E5D1 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		D10D409626B141090059E5D1 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				D10D409726B141090059E5D1 /* Info.plist */,
+				D10D409826B141090059E5D1 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		D10D40A026B141090059E5D1 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D10D40A126B141090059E5D1 /* Tests_iOS.swift */,
+				D10D40A326B141090059E5D1 /* Info.plist */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		D10D40AB26B141090059E5D1 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				D10D40AC26B141090059E5D1 /* Tests_macOS.swift */,
+				D10D40AE26B141090059E5D1 /* Info.plist */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D10D408C26B141090059E5D1 /* Novflix (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D10D40B726B141090059E5D1 /* Build configuration list for PBXNativeTarget "Novflix (iOS)" */;
+			buildPhases = (
+				D10D408926B141090059E5D1 /* Sources */,
+				D10D408A26B141090059E5D1 /* Frameworks */,
+				D10D408B26B141090059E5D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Novflix (iOS)";
+			productName = "Novflix (iOS)";
+			productReference = D10D408D26B141090059E5D1 /* Novflix.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D10D409426B141090059E5D1 /* Novflix (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D10D40BA26B141090059E5D1 /* Build configuration list for PBXNativeTarget "Novflix (macOS)" */;
+			buildPhases = (
+				D10D409126B141090059E5D1 /* Sources */,
+				D10D409226B141090059E5D1 /* Frameworks */,
+				D10D409326B141090059E5D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Novflix (macOS)";
+			productName = "Novflix (macOS)";
+			productReference = D10D409526B141090059E5D1 /* Novflix.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D10D409C26B141090059E5D1 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D10D40BD26B141090059E5D1 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				D10D409926B141090059E5D1 /* Sources */,
+				D10D409A26B141090059E5D1 /* Frameworks */,
+				D10D409B26B141090059E5D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D10D409F26B141090059E5D1 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = D10D409D26B141090059E5D1 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D10D40A726B141090059E5D1 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D10D40C026B141090059E5D1 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				D10D40A426B141090059E5D1 /* Sources */,
+				D10D40A526B141090059E5D1 /* Frameworks */,
+				D10D40A626B141090059E5D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D10D40AA26B141090059E5D1 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = D10D40A826B141090059E5D1 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D10D408126B141080059E5D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					D10D408C26B141090059E5D1 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					D10D409426B141090059E5D1 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					D10D409C26B141090059E5D1 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = D10D408C26B141090059E5D1;
+					};
+					D10D40A726B141090059E5D1 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = D10D409426B141090059E5D1;
+					};
+				};
+			};
+			buildConfigurationList = D10D408426B141080059E5D1 /* Build configuration list for PBXProject "Novflix" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D10D408026B141080059E5D1;
+			productRefGroup = D10D408E26B141090059E5D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D10D408C26B141090059E5D1 /* Novflix (iOS) */,
+				D10D409426B141090059E5D1 /* Novflix (macOS) */,
+				D10D409C26B141090059E5D1 /* Tests iOS */,
+				D10D40A726B141090059E5D1 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D10D408B26B141090059E5D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D10D40B326B141090059E5D1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10D409326B141090059E5D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D10D40B426B141090059E5D1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10D409B26B141090059E5D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10D40A626B141090059E5D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D10D408926B141090059E5D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D10D40B126B141090059E5D1 /* ContentView.swift in Sources */,
+				D10D40AF26B141090059E5D1 /* NovflixApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10D409126B141090059E5D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D10D40B226B141090059E5D1 /* ContentView.swift in Sources */,
+				D10D40B026B141090059E5D1 /* NovflixApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10D409926B141090059E5D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D10D40A226B141090059E5D1 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10D40A426B141090059E5D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D10D40AD26B141090059E5D1 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D10D409F26B141090059E5D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D10D408C26B141090059E5D1 /* Novflix (iOS) */;
+			targetProxy = D10D409E26B141090059E5D1 /* PBXContainerItemProxy */;
+		};
+		D10D40AA26B141090059E5D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D10D409426B141090059E5D1 /* Novflix (macOS) */;
+			targetProxy = D10D40A926B141090059E5D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D10D40B526B141090059E5D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D10D40B626B141090059E5D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D10D40B826B141090059E5D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6GZTHQ9Z5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.november.Novflix;
+				PRODUCT_NAME = Novflix;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D10D40B926B141090059E5D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6GZTHQ9Z5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.november.Novflix;
+				PRODUCT_NAME = Novflix;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D10D40BB26B141090059E5D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = K6GZTHQ9Z5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.november.Novflix;
+				PRODUCT_NAME = Novflix;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D10D40BC26B141090059E5D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = K6GZTHQ9Z5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.november.Novflix;
+				PRODUCT_NAME = Novflix;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D10D40BE26B141090059E5D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6GZTHQ9Z5;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.november.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Novflix (iOS)";
+			};
+			name = Debug;
+		};
+		D10D40BF26B141090059E5D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6GZTHQ9Z5;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.november.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Novflix (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D10D40C126B141090059E5D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = K6GZTHQ9Z5;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.november.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Novflix (macOS)";
+			};
+			name = Debug;
+		};
+		D10D40C226B141090059E5D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = K6GZTHQ9Z5;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.november.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Novflix (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D10D408426B141080059E5D1 /* Build configuration list for PBXProject "Novflix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D10D40B526B141090059E5D1 /* Debug */,
+				D10D40B626B141090059E5D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D10D40B726B141090059E5D1 /* Build configuration list for PBXNativeTarget "Novflix (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D10D40B826B141090059E5D1 /* Debug */,
+				D10D40B926B141090059E5D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D10D40BA26B141090059E5D1 /* Build configuration list for PBXNativeTarget "Novflix (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D10D40BB26B141090059E5D1 /* Debug */,
+				D10D40BC26B141090059E5D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D10D40BD26B141090059E5D1 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D10D40BE26B141090059E5D1 /* Debug */,
+				D10D40BF26B141090059E5D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D10D40C026B141090059E5D1 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D10D40C126B141090059E5D1 /* Debug */,
+				D10D40C226B141090059E5D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D10D408126B141080059E5D1 /* Project object */;
+}
