@@ -11,6 +11,8 @@ struct HomeView: View {
     
     var viewModel: HomeViewModel = HomeViewModel()
     
+    let screen = UIScreen.main.bounds
+    
     var body: some View {
         ZStack {
             Color.black
@@ -18,6 +20,14 @@ struct HomeView: View {
             
             ScrollView {
                 LazyVStack {
+                    
+                    TopRowButtons()
+                    
+                    TopMoviePreview(movie: exampleMovie1)
+                        .frame(width: screen.width)
+                        .padding(.top, -110)
+                        .zIndex(-1)
+                    
                     ForEach(viewModel.allCategories, id: \.self) { category in
                         VStack {
                             HStack {
@@ -50,5 +60,44 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+    }
+}
+
+struct TopRowButtons: View {
+    var body: some View {
+        HStack {
+            Button(action: {
+                
+            }, label: {
+                Image("netflix_logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 50)
+            })
+            .buttonStyle(PlainButtonStyle())
+            Spacer()
+            Button(action: {
+                
+            }, label: {
+                Text("TV shows")
+            })
+            .buttonStyle(PlainButtonStyle())
+            Spacer()
+            Button(action: {
+                
+            }, label: {
+                Text("Movies")
+            })
+            .buttonStyle(PlainButtonStyle())
+            Spacer()
+            Button(action: {
+                
+            }, label: {
+                Text("My List")
+            })
+            .buttonStyle(PlainButtonStyle())
+        }
+        .padding(.leading, 10)
+        .padding(.trailing, 30)
     }
 }
