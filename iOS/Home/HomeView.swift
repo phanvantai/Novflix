@@ -21,13 +21,16 @@ struct HomeView: View {
             ScrollView {
                 LazyVStack {
                     
+                    /// Top Menu
                     TopRowButtons()
                     
+                    /// Movie Preview
                     TopMoviePreview(movie: exampleMovie1)
                         .frame(width: screen.width)
                         .padding(.top, -110)
                         .zIndex(-1)
                     
+                    /// List with category
                     ForEach(viewModel.allCategories, id: \.self) { category in
                         VStack {
                             HStack {
