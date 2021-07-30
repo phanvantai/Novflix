@@ -55,7 +55,7 @@ struct CustomTabSwitcher: View {
             case .trailers:
                 Text(currentTab.rawValue)
             case .relevant:
-                Text(currentTab.rawValue)
+                MoreLikeThis(movies: exampleMovies)
             }
         }
         .foregroundColor(.white)

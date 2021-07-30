@@ -15,7 +15,7 @@ let exampleMovie1 = Movie(id: UUID().uuidString,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
-                          year: 2020,
+                          moreLikeThisMovies: [], year: 2020,
                           rating: "TV-MA",
                           numberOfSeasons: 1)
 let exampleMovie2 = Movie(id: UUID().uuidString,
@@ -25,7 +25,7 @@ let exampleMovie2 = Movie(id: UUID().uuidString,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
-                          year: 2020,
+                          moreLikeThisMovies: [], year: 2020,
                           rating: "TV-MA",
                           numberOfSeasons: 2,
                           promotionHeadline: "Best Rated Show")
@@ -36,7 +36,7 @@ let exampleMovie3 = Movie(id: UUID().uuidString,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
-                          year: 2020,
+                          moreLikeThisMovies: [], year: 2020,
                           rating: "TV-MA",
                           numberOfSeasons: 3)
 let exampleMovie4 =  Movie(id: UUID().uuidString,
@@ -46,7 +46,7 @@ let exampleMovie4 =  Movie(id: UUID().uuidString,
                            defaultEpisodeInfo: exampleEpisodeInfo1,
                            creators: "Baran bo Odan, Jantje Friese",
                            cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
-                           year: 2020,
+                           moreLikeThisMovies: [], year: 2020,
                            rating: "TV-MA",
                            numberOfSeasons: 4,
                            promotionHeadline: "New episodes coming soon")
@@ -57,7 +57,7 @@ let exampleMovie5 = Movie(id: UUID().uuidString,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
-                          year: 2020,
+                          moreLikeThisMovies: [], year: 2020,
                           rating: "TV-MA",
                           numberOfSeasons: 5)
 let exampleMovie6 = Movie(id: UUID().uuidString,
@@ -67,12 +67,14 @@ let exampleMovie6 = Movie(id: UUID().uuidString,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
-                          year: 2020,
+                          moreLikeThisMovies: exampleMovies, year: 2020,
                           rating: "TV-MA",
                           numberOfSeasons: 6,
                           promotionHeadline: "Watch Season 6 Now")
 
-let exampleMovies: [Movie] = [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6]
+var exampleMovies: [Movie] {
+    return [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie5].shuffled()
+}
 
 let exampleEpisodeInfo1 = CurrentEpisodeInfo(espisodeName: "Beginning and Endings", description: "Six months after the disapearances, the police form a task force. In 2052, Jonas learns that most of Winden perished in an apocalyptic event.", season: 2, episode: 1)
 

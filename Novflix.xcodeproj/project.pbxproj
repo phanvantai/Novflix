@@ -39,6 +39,9 @@
 		D1FA1ECB26B3B2E300165DF6 /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FA1ECA26B3B2E300165DF6 /* CustomTabSwitcher.swift */; };
 		D1FA1ECE26B3B71A00165DF6 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FA1ECD26B3B71A00165DF6 /* String+Extensions.swift */; };
 		D1FA1ECF26B3B71A00165DF6 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FA1ECD26B3B71A00165DF6 /* String+Extensions.swift */; };
+		D1FA1ED126B3BC8C00165DF6 /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FA1ECA26B3B2E300165DF6 /* CustomTabSwitcher.swift */; };
+		D1FA1ED326B3BCCA00165DF6 /* MoreLikeThis.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FA1ED226B3BCCA00165DF6 /* MoreLikeThis.swift */; };
+		D1FA1ED426B3BCCA00165DF6 /* MoreLikeThis.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FA1ED226B3BCCA00165DF6 /* MoreLikeThis.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +88,7 @@
 		D13C72EE26B1E08600B27CDA /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		D1FA1ECA26B3B2E300165DF6 /* CustomTabSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSwitcher.swift; sourceTree = "<group>"; };
 		D1FA1ECD26B3B71A00165DF6 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		D1FA1ED226B3BCCA00165DF6 /* MoreLikeThis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreLikeThis.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,11 +163,10 @@
 			children = (
 				D12230A426B312380055F4C7 /* Home */,
 				D12230A326B3120D0055F4C7 /* OtherViews */,
+				D1FA1ED026B3BC7F00165DF6 /* MovieDetail */,
 				D12230A226B312000055F4C7 /* Model */,
 				D12230A126B311F20055F4C7 /* Helpers */,
 				D10D409026B141090059E5D1 /* Info.plist */,
-				D12230A526B3127C0055F4C7 /* MovieDetail.swift */,
-				D1FA1ECA26B3B2E300165DF6 /* CustomTabSwitcher.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -238,6 +241,16 @@
 				D1FA1ECD26B3B71A00165DF6 /* String+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D1FA1ED026B3BC7F00165DF6 /* MovieDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D1FA1ECA26B3B2E300165DF6 /* CustomTabSwitcher.swift */,
+				D12230A526B3127C0055F4C7 /* MovieDetail.swift */,
+				D1FA1ED226B3BCCA00165DF6 /* MoreLikeThis.swift */,
+			);
+			path = MovieDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,6 +419,7 @@
 				D10D40D026B14BAB0059E5D1 /* GlobalHelpers.swift in Sources */,
 				D10D40C426B146FB0059E5D1 /* HomeView.swift in Sources */,
 				D10D40D326B14DC00059E5D1 /* HomeViewModel.swift in Sources */,
+				D1FA1ED326B3BCCA00165DF6 /* MoreLikeThis.swift in Sources */,
 				D10D40B126B141090059E5D1 /* ContentView.swift in Sources */,
 				D10D40D926B164B30059E5D1 /* SmallVerticallButton.swift in Sources */,
 				D10D40CD26B14B2B0059E5D1 /* StandardHomeMovie.swift in Sources */,
@@ -427,12 +441,14 @@
 				D10D40D126B14BAB0059E5D1 /* GlobalHelpers.swift in Sources */,
 				D1FA1ECF26B3B71A00165DF6 /* String+Extensions.swift in Sources */,
 				D10D40C526B146FB0059E5D1 /* HomeView.swift in Sources */,
+				D1FA1ED426B3BCCA00165DF6 /* MoreLikeThis.swift in Sources */,
 				D10D40D426B14DC00059E5D1 /* HomeViewModel.swift in Sources */,
 				D10D40B226B141090059E5D1 /* ContentView.swift in Sources */,
 				D10D40DA26B164B30059E5D1 /* SmallVerticallButton.swift in Sources */,
 				D10D40CE26B14B2B0059E5D1 /* StandardHomeMovie.swift in Sources */,
 				D10D40D726B15CBA0059E5D1 /* TopMoviePreview.swift in Sources */,
 				D12230AA26B318A60055F4C7 /* Episode.swift in Sources */,
+				D1FA1ED126B3BC8C00165DF6 /* CustomTabSwitcher.swift in Sources */,
 				D10D40CB26B14ADF0059E5D1 /* Movie.swift in Sources */,
 				D10D40B026B141090059E5D1 /* NovflixApp.swift in Sources */,
 				D13C72F026B1E08600B27CDA /* PlayButton.swift in Sources */,
