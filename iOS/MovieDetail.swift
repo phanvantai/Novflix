@@ -55,6 +55,25 @@ struct MovieDetail: View {
                         
                         ConbuttriesInfo(movie: movie)
                         
+                        HStack(spacing: 60) {
+                            SmallVerticallButton(text: "My List", isOnImage: "checkmark", isOffImage: "plus", isOn: true) {
+                                //
+                            }
+                            
+                            SmallVerticallButton(text: "Rate", isOnImage: "hand.thumbsup.fill", isOffImage: "hand.thumbsup", isOn: false) {
+                                //
+                            }
+                            
+                            SmallVerticallButton(text: "Share", isOnImage: "square.and.arrow.up", isOffImage: "square.and.arrow.up", isOn: true) {
+                                //
+                            }
+                            
+                            Spacer()
+                        }
+                        .padding(.leading, 20)
+                        
+                        CustomTabSwitcher(tabs: CustomTab.allCases, movie: movie)
+                        
                     }
                     .padding(.horizontal, 10)
                     
