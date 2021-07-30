@@ -28,6 +28,20 @@ let exampleTrailer5 = Trailer(name: "Previous", videoURL: exampleVideoURL, thumb
 
 let exampleTrailers = [exampleTrailer1, exampleTrailer2, exampleTrailer3, exampleTrailer4, exampleTrailer5]
 
+let exampleEpisode1 = Episode(name: "Beginnings and Endings", season: 1, episodeNumber: 1, thumbnailImageURLString: "https://picsum.photos/300/102", desciption: "Six months after the disapearances, the police form a task force. In 2052, Jonas learns that most of Winden perished in an apocalyptic event.", length: 53, videoURL: exampleVideoURL)
+
+let exampleEpisode2 = Episode(name: "Dark Matter", season: 1, episodeNumber: 2, thumbnailImageURLString: "https://picsum.photos/300/103", desciption: "Clausen and Charllotte interview Regina. The Stranger takes Hannah to 1987, where Claudia has an unnerving encounter and Egon visits an old nemesis", length: 54, videoURL: exampleVideoURL)
+
+let exampleEpisode3 = Episode(name: "Ghosts", season: 1, episodeNumber: 3, thumbnailImageURLString: "https://picsum.photos/300/104", desciption: "In 1954, a missing Helge returns, but he'll only speak to Noah. In 1987, Claudia brings the time machine to Tannhaus, and Egon questions Ulrich again.", length: 56, videoURL: exampleVideoURL)
+
+let exampleEpisode4 = Episode(name: "Beginnings and Endings", season: 2, episodeNumber: 1, thumbnailImageURLString: "https://picsum.photos/300/105", desciption: "Six months after the disapearances, the police form a task force. In 2052, Jonas learns that most of Winden perished in an apocalyptic event.", length: 53, videoURL: exampleVideoURL)
+
+let exampleEpisode5 = Episode(name: "Dark Matter", season: 2, episodeNumber: 2, thumbnailImageURLString: "https://picsum.photos/300/106", desciption: "Clausen and Charllotte interview Regina. The Stranger takes Hannah to 1987, where Claudia has an unnerving encounter and Egon visits an old nemesis", length: 54, videoURL: exampleVideoURL)
+
+let exampleEpisode6 = Episode(name: "Ghosts", season: 2, episodeNumber: 3, thumbnailImageURLString: "https://picsum.photos/300/107", desciption: "In 1954, a missing Helge returns, but he'll only speak to Noah. In 1987, Claudia brings the time machine to Tannhaus, and Egon questions Ulrich again.", length: 56, videoURL: exampleVideoURL)
+
+var allExampleEpisodes = [exampleEpisode1, exampleEpisode2, exampleEpisode3, exampleEpisode4, exampleEpisode5, exampleEpisode6,]
+
 let exampleMovie1 = Movie(id: UUID().uuidString,
                           name: "DARK",
                           thumbnailURL: URL(string: "https://picsum.photos/200/300")!,
@@ -45,7 +59,9 @@ let exampleMovie2 = Movie(id: UUID().uuidString,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
-                          moreLikeThisMovies: [], trailers: exampleTrailers, year: 2020,
+                          moreLikeThisMovies: [],
+                          episodes: allExampleEpisodes,
+                          trailers: exampleTrailers, year: 2020,
                           rating: "TV-MA",
                           numberOfSeasons: 2,
                           promotionHeadline: "Best Rated Show")
