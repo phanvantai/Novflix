@@ -70,7 +70,7 @@ struct TopMoviePreview: View {
                     Spacer()
                     Spacer()
                 }
-                .padding(.vertical, 4)
+                .padding(.vertical, 14)
             }
             .background(
                 LinearGradient.blackOpacityGradient

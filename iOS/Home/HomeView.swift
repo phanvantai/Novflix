@@ -39,30 +39,7 @@ struct HomeView: View {
                         .zIndex(-1)
                     
                     /// List with category
-                    ForEach(viewModel.allCategories, id: \.self) { category in
-                        VStack {
-                            HStack {
-                                Text(category)
-                                    .font(.title3)
-                                    .bold()
-                                
-                                Spacer()
-                            }
-                            
-                            ScrollView(.horizontal, showsIndicators: false) {
-                                LazyHStack {
-                                    ForEach(viewModel.getMovies(forCategory: category)) { movie in
-                                        StandardHomeMovie(movie: movie)
-                                            .frame(width: 100, height: 200, alignment: .center)
-                                            .padding(.horizontal, 20)
-                                            .onTapGesture {
-                                                movieDetailToShow = movie
-                                            }
-                                    }
-                                }
-                            }
-                        }
-                    }
+                    HomeStack(viewModel: viewModel, topRowSelection: topRowSelection, homeGenre: homeGenre, movieDetailToShow: $movieDetailToShow)
                 }
             }
             
@@ -70,6 +47,87 @@ struct HomeView: View {
                 MovieDetail(movie: movieDetailToShow!, movieDetailToShow: $movieDetailToShow)
                     .animation(.easeIn)
                     .transition(.opacity)
+            }
+            
+            if showTopRowSelection {
+                Group {
+                    Color.black.opacity(0.9)
+                    
+                    VStack(spacing: 40) {
+                        Spacer()
+                        
+                        ForEach(HomeTopRow.allCases, id: \.self) { row in
+                            Button(action: {
+                                topRowSelection = row
+                                showTopRowSelection = false
+                            }, label: {
+                                if topRowSelection == row {
+                                    Text(row.rawValue)
+                                        .foregroundColor(.white)
+                                        .bold()
+                                } else {
+                                    Text(row.rawValue)
+                                        .foregroundColor(.gray)
+                                }
+                                
+                            })
+                        }
+                        Spacer()
+                        
+                        Button(action: {
+                            showTopRowSelection = false
+                        }, label: {
+                            Image(systemName: "xmark.circle.fill")
+                                .foregroundColor(.white)
+                                .font(.system(size: 40))
+                        })
+                        .padding(.bottom, 30)
+                    }
+                }
+                .edgesIgnoringSafeArea(.all)
+                .font(.title2)
+            }
+            
+            if showGenreSelection {
+                Group {
+                    Color.black.opacity(0.9)
+                    
+                    VStack(spacing: 40) {
+                        Spacer()
+                        ScrollView {
+                            ForEach(viewModel.allGenre, id: \.self) { genre in
+                                Button(action: {
+                                    homeGenre = genre
+                                    showGenreSelection = false
+                                }, label: {
+                                    if homeGenre == genre {
+                                        Text(genre.rawValue)
+                                            .foregroundColor(.white)
+                                            .bold()
+                                    } else {
+                                        Text(genre.rawValue)
+                                            .foregroundColor(.gray)
+                                    }
+                                    
+                                })
+                                .padding(.bottom, 40)
+                            }
+                        }
+                        
+                        Spacer()
+                        
+                        Button(action: {
+                            showGenreSelection = false
+                        }, label: {
+                            Image(systemName: "xmark.circle.fill")
+                                .foregroundColor(.white)
+                                .font(.system(size: 40))
+                        })
+                        .padding(.bottom, 30)
+                    }
+                }
+                .edgesIgnoringSafeArea(.all)
+                .font(.title2)
             }
         }
         .foregroundColor(.white)

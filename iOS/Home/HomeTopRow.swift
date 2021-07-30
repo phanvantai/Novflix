@@ -14,7 +14,7 @@ enum HomeTopRow: String, CaseIterable {
     case myList = "My List"
 }
 
-enum HomeGenre: String {
+enum HomeGenre: String, CaseIterable {
     case AllGenres = "All Genres"
     case Action
     case Comedy
