@@ -15,6 +15,12 @@ struct HomeView: View {
     
     @State private var movieDetailToShow: Movie? = nil
     
+    @State private var topRowSelection: HomeTopRow = .home
+    @State private var homeGenre: HomeGenre = .AllGenres
+    
+    @State private var showGenreSelection = false
+    @State private var showTopRowSelection = false
+    
     var body: some View {
         ZStack {
             Color.black
@@ -24,7 +30,7 @@ struct HomeView: View {
                 LazyVStack {
                     
                     /// Top Menu
-                    TopRowButtons()
+                    TopRowButton(topRowSelection: $topRowSelection, homeGenre: $homeGenre, showGenreSelection: $showGenreSelection, showTopRowSelection: $showTopRowSelection)
                     
                     /// Movie Preview
                     TopMoviePreview(movie: exampleMovie1)
@@ -73,44 +79,5 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
-    }
-}
-
-struct TopRowButtons: View {
-    var body: some View {
-        HStack {
-            Button(action: {
-                
-            }, label: {
-                Image("netflix_logo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 50)
-            })
-            .buttonStyle(PlainButtonStyle())
-            Spacer()
-            Button(action: {
-                
-            }, label: {
-                Text("TV shows")
-            })
-            .buttonStyle(PlainButtonStyle())
-            Spacer()
-            Button(action: {
-                
-            }, label: {
-                Text("Movies")
-            })
-            .buttonStyle(PlainButtonStyle())
-            Spacer()
-            Button(action: {
-                
-            }, label: {
-                Text("My List")
-            })
-            .buttonStyle(PlainButtonStyle())
-        }
-        .padding(.leading, 10)
-        .padding(.trailing, 30)
     }
 }
