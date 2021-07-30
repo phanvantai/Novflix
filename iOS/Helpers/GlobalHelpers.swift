@@ -8,6 +8,26 @@
 import Foundation
 import SwiftUI
 
+let exampleVideoURL = URL(string: "https://www.radianmediaplayer.com/media/big-buck-bunny-360p.mp4")!
+
+let exampleImageURL = URL(string: "https://picsum.photos/300/104")!
+let exampleImageURL2 = URL(string: "https://picsum.photos/300/105")!
+let exampleImageURL3 = URL(string: "https://picsum.photos/300/106")!
+let exampleImageURL4 = URL(string: "https://picsum.photos/300/107")!
+let exampleImageURL5 = URL(string: "https://picsum.photos/300/108")!
+
+var randomExampleImageURL: URL {
+    return [exampleImageURL, exampleImageURL2, exampleImageURL3, exampleImageURL4, exampleImageURL5].randomElement() ?? exampleImageURL5
+}
+
+let exampleTrailer1 = Trailer(name: "Season 3 Trailer", videoURL: exampleVideoURL, thumbnailImageURL: randomExampleImageURL)
+let exampleTrailer2 = Trailer(name: "Beginnins and Endings", videoURL: exampleVideoURL, thumbnailImageURL: randomExampleImageURL)
+let exampleTrailer3 = Trailer(name: "The Mysterious", videoURL: exampleVideoURL, thumbnailImageURL: randomExampleImageURL)
+let exampleTrailer4 = Trailer(name: "The Hero's Journey", videoURL: exampleVideoURL, thumbnailImageURL: randomExampleImageURL)
+let exampleTrailer5 = Trailer(name: "Previous", videoURL: exampleVideoURL, thumbnailImageURL: randomExampleImageURL)
+
+let exampleTrailers = [exampleTrailer1, exampleTrailer2, exampleTrailer3, exampleTrailer4, exampleTrailer5]
+
 let exampleMovie1 = Movie(id: UUID().uuidString,
                           name: "DARK",
                           thumbnailURL: URL(string: "https://picsum.photos/200/300")!,
@@ -15,7 +35,7 @@ let exampleMovie1 = Movie(id: UUID().uuidString,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
-                          moreLikeThisMovies: [], year: 2020,
+                          moreLikeThisMovies: [], trailers: exampleTrailers, year: 2020,
                           rating: "TV-MA",
                           numberOfSeasons: 1)
 let exampleMovie2 = Movie(id: UUID().uuidString,
@@ -25,7 +45,7 @@ let exampleMovie2 = Movie(id: UUID().uuidString,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
-                          moreLikeThisMovies: [], year: 2020,
+                          moreLikeThisMovies: [], trailers: exampleTrailers, year: 2020,
                           rating: "TV-MA",
                           numberOfSeasons: 2,
                           promotionHeadline: "Best Rated Show")
@@ -36,7 +56,7 @@ let exampleMovie3 = Movie(id: UUID().uuidString,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
-                          moreLikeThisMovies: [], year: 2020,
+                          moreLikeThisMovies: [], trailers: exampleTrailers, year: 2020,
                           rating: "TV-MA",
                           numberOfSeasons: 3)
 let exampleMovie4 =  Movie(id: UUID().uuidString,
@@ -46,7 +66,7 @@ let exampleMovie4 =  Movie(id: UUID().uuidString,
                            defaultEpisodeInfo: exampleEpisodeInfo1,
                            creators: "Baran bo Odan, Jantje Friese",
                            cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
-                           moreLikeThisMovies: [], year: 2020,
+                           moreLikeThisMovies: [], trailers: exampleTrailers, year: 2020,
                            rating: "TV-MA",
                            numberOfSeasons: 4,
                            promotionHeadline: "New episodes coming soon")
@@ -57,7 +77,7 @@ let exampleMovie5 = Movie(id: UUID().uuidString,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
-                          moreLikeThisMovies: [], year: 2020,
+                          moreLikeThisMovies: [], trailers: exampleTrailers, year: 2020,
                           rating: "TV-MA",
                           numberOfSeasons: 5)
 let exampleMovie6 = Movie(id: UUID().uuidString,
@@ -67,7 +87,7 @@ let exampleMovie6 = Movie(id: UUID().uuidString,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
-                          moreLikeThisMovies: exampleMovies, year: 2020,
+                          moreLikeThisMovies: exampleMovies, trailers: exampleTrailers, year: 2020,
                           rating: "TV-MA",
                           numberOfSeasons: 6,
                           promotionHeadline: "Watch Season 6 Now")

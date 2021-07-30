@@ -26,6 +26,7 @@ struct Movie: Identifiable {
     
     /// movie detail
     var episodes: [Episode]?
+    var trailers: [Trailer]
     
     var year: Int
     var rating: String
