@@ -16,7 +16,7 @@ struct SearchBar: View {
     var body: some View {
         ZStack(alignment: .leading) {
             Color.graySearchBackground
-                .frame(width: 300, height: 36)
+                .frame(width: 290, height: 36)
                 .cornerRadius(8)
             
             HStack {
@@ -32,6 +32,7 @@ struct SearchBar: View {
                     .onTapGesture(perform: {
                         isEditing = true
                     })
+                    .animation(.default)
                 
                 if !text.isEmpty {
                     
@@ -67,6 +68,9 @@ struct SearchBar: View {
                         Text("Cancel")
                             .foregroundColor(Color.graySearchText)
                     })
+                    .padding(.trailing, 10)
+                    .transition(.move(edge: .trailing))
+                    .animation(.default)
                 }
             }
         }

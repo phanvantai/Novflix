@@ -11,7 +11,11 @@ class SearchViewModel: ObservableObject {
     
     @Published var isLoading: Bool = false
     
-    @Published var searchText: String = ""
+    @Published var searchText: String = "" {
+        didSet {
+            searchTextDidUpdate()
+        }
+    }
     
     @Published var viewState: ViewState = .ready
     
@@ -42,9 +46,9 @@ class SearchViewModel: ObservableObject {
     
     private func getSearchResults() {
         
-        let haveResult = Int.random(in: 0...5)
+        let haveResult = Int.random(in: 0...3)
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             if haveResult == 0 {
                 self.searchResults = []
                 self.updateViewState(to: .empty)
