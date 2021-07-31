@@ -112,7 +112,7 @@ var exampleMovies: [Movie] {
     return [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie5].shuffled()
 }
 
-let exampleEpisodeInfo1 = CurrentEpisodeInfo(espisodeName: "Beginning and Endings", description: "Six months after the disapearances, the police form a task force. In 2052, Jonas learns that most of Winden perished in an apocalyptic event.", season: 2, episode: 1)
+let exampleEpisodeInfo1 = CurrentEpisodeInfo(episodeName: "Beginning and Endings", description: "Six months after the disapearances, the police form a task force. In 2052, Jonas learns that most of Winden perished in an apocalyptic event.", season: 2, episode: 1)
 
 extension LinearGradient {
     static let blackOpacityGradient = LinearGradient(gradient: Gradient(colors: [Color.black.opacity(0.0), Color.black.opacity(0.9)]), startPoint: .top, endPoint: .bottom)
