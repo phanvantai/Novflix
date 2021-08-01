@@ -11,6 +11,8 @@ struct PreviewView: View {
     
     @ObservedObject var viewModel: PreviewViewModel
     
+    var playVideo: Bool
+    
     func isLastCategory(_ cat: String) -> Bool {
         let count = viewModel.movie.categories.count
         
@@ -26,7 +28,7 @@ struct PreviewView: View {
         ZStack {
             Color.black
                 .edgesIgnoringSafeArea(.all)
-            TrailerPlayerView(videoURL: viewModel.movie.trailers.first?.videoURL, playingVideo: .constant(true))
+            TrailerPlayerView(videoURL: viewModel.movie.trailers.first?.videoURL, playingVideo: .constant(playVideo))
             
             VStack {
                 HStack {
@@ -100,6 +102,6 @@ struct PreviewView: View {
 
 struct PreviewView_Previews: PreviewProvider {
     static var previews: some View {
-        PreviewView(viewModel: PreviewViewModel(movie: exampleMovie6))
+        PreviewView(viewModel: PreviewViewModel(movie: exampleMovie6), playVideo: true)
     }
 }

@@ -8,8 +8,8 @@
 import Foundation
 import SwiftUI
 
-let exampleVideoURL = URL(string: "https://www.radianmediaplayer.com/media/big-buck-bunny-360p.mp4")!
-let videoBackup = URL(string: "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4")
+let exampleVideoURL = URL(string: "https://www.radiantmediaplayer.com/media/big-buck-bunny-360p.mp4")!
+let videoBackup = URL(string: "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4")!
 
 let exampleImageURL = URL(string: "https://picsum.photos/300/104")!
 let exampleImageURL2 = URL(string: "https://picsum.photos/300/105")!
@@ -111,7 +111,7 @@ let exampleMovie6 = Movie(id: UUID().uuidString,
                           /*promotionHeadline: "Watch Season 6 Now",*/ previewImageName: "travelersPreview", previewVideoURL: exampleVideoURL)
 
 var exampleMovies: [Movie] {
-    return [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6]//.shuffled()
+    return [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie5]//.shuffled()
 }
 
 let exampleEpisodeInfo1 = CurrentEpisodeInfo(episodeName: "Beginning and Endings", description: "Six months after the disapearances, the police form a task force. In 2052, Jonas learns that most of Winden perished in an apocalyptic event.", season: 2, episode: 1)

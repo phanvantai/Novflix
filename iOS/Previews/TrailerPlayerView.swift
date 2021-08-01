@@ -19,6 +19,7 @@ struct TrailerPlayerView: View {
             VideoPlayer(url: videoURL!, play: $playingVideo)
         } else {
             Text("Couldn't load video")
+                .foregroundColor(.white)
         }
     }
 }
