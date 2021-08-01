@@ -13,11 +13,7 @@ struct HomeView: View {
     
     let screen = UIScreen.main.bounds
     
-    @State private var movieDetailToShow: Movie? = nil {
-        didSet {
-            print(movieDetailToShow)
-        }
-    }
+    @State private var movieDetailToShow: Movie? = nil
     
     @State private var topRowSelection: HomeTopRow = .home
     @State private var homeGenre: HomeGenre = .AllGenres

@@ -16,11 +16,7 @@ struct MovieDetail: View {
     @State private var showSeasonPicker = false
     @State private var selectedSeason = 1
     
-    @Binding var movieDetailToShow: Movie? {
-        didSet {
-            print("movie detail to show \(movie.name) \(movieDetailToShow?.name)")
-        }
-    }
+    @Binding var movieDetailToShow: Movie?
     
     var body: some View {
         print(movie.name)

@@ -5,7 +5,7 @@
 //  Created by Tai Phan Van on 28/07/2021.
 //
 
-import Foundation
+import SwiftUI
 
 struct Movie: Identifiable {
     
@@ -37,9 +37,9 @@ struct Movie: Identifiable {
     var rating: String
     var numberOfSeasons: Int?
     
-    var promotionHeadline: String? {
-        return self.name
-    }
+    var accentColor: Color = .white
+    
+    var promotionHeadline: String?
     
     var previewImageName: String
     var previewVideoURL: URL?
