@@ -22,7 +22,7 @@ struct SearchView: View {
                 SearchBar(text: $viewModel.searchText, isLoading: $viewModel.isLoading)
                     .padding()
                 
-                ScrollView {
+                ScrollView(.vertical, showsIndicators: false) {
                     if viewModel.isShowingPopularMovies {
                         PopularMoviesListView(movies: viewModel.popularMovies, movieDetailToShow: $movieDetailToShow)
                     }
