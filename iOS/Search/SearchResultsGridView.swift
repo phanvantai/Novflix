@@ -23,6 +23,7 @@ struct SearchResultsGridView: View {
             ForEach(movies, id: \.id) { movie in
                 StandardHomeMovie(movie: movie)
                     .frame(height: 160)
+                    .clipped()
                     .onTapGesture(perform: {
                         movieDetailToShow = movie
                     })
@@ -36,7 +37,7 @@ struct SearchResultsGridView_Previews: PreviewProvider {
         ZStack {
             Color.black
                 .edgesIgnoringSafeArea(.all)
-            SearchResultsGridView(movies: generateMovies(20), movieDetailToShow: .constant(nil))
+            SearchResultsGridView(movies: exampleMovies, movieDetailToShow: .constant(nil))
 
         }
     }

@@ -28,11 +28,12 @@ struct HomeStack: View {
                 }
                 
                 ScrollView(.horizontal, showsIndicators: false) {
-                    LazyHStack {
-                        ForEach(viewModel.getMovies(forCategory: category, andHomeRow: topRowSelection, andGenre: homeGenre)) { movie in
+                    HStack {
+                        ForEach(viewModel.getMovies(forCategory: category, andHomeRow: topRowSelection, andGenre: homeGenre), id: \.id) { movie in
                             StandardHomeMovie(movie: movie)
                                 .frame(width: 100, height: 200, alignment: .center)
                                 .padding(.horizontal, 20)
+                                .clipped()
                                 .onTapGesture {
                                     movieDetailToShow = movie
                                 }

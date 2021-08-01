@@ -29,7 +29,6 @@ class SearchViewModel: ObservableObject {
     }
     
     public func searchTextDidUpdate() {
-        print("TaiPV \(searchText)")
         updateViewState(to: .loading)
         
         if !searchText.isEmpty {

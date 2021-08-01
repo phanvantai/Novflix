@@ -13,7 +13,11 @@ struct HomeView: View {
     
     let screen = UIScreen.main.bounds
     
-    @State private var movieDetailToShow: Movie? = nil
+    @State private var movieDetailToShow: Movie? = nil {
+        didSet {
+            print(movieDetailToShow)
+        }
+    }
     
     @State private var topRowSelection: HomeTopRow = .home
     @State private var homeGenre: HomeGenre = .AllGenres
@@ -37,6 +41,8 @@ struct HomeView: View {
                         .frame(width: screen.width)
                         .padding(.top, -110)
                         .zIndex(-1)
+                    
+                    MoviePreviewRow(movies: exampleMovies)
                     
                     /// List with category
                     HomeStack(viewModel: viewModel, topRowSelection: topRowSelection, homeGenre: homeGenre, movieDetailToShow: $movieDetailToShow)

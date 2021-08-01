@@ -15,7 +15,7 @@ struct StandardHomeMovie: View {
     var body: some View {
         KFImage(movie.thumbnailURL)
             .resizable()
-            .scaledToFill()
+            .aspectRatio(contentMode: .fill)
             .clipped()
     }
 }

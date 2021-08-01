@@ -16,10 +16,15 @@ struct MovieDetail: View {
     @State private var showSeasonPicker = false
     @State private var selectedSeason = 1
     
-    @Binding var movieDetailToShow: Movie?
+    @Binding var movieDetailToShow: Movie? {
+        didSet {
+            print("movie detail to show \(movie.name) \(movieDetailToShow?.name)")
+        }
+    }
     
     var body: some View {
-        ZStack {
+        print(movie.name)
+        return ZStack {
             Color.black
                 .edgesIgnoringSafeArea(.all)
             
@@ -43,7 +48,8 @@ struct MovieDetail: View {
                     ScrollView(.vertical, showsIndicators: false) {
                         VStack {
                             StandardHomeMovie(movie: movie)
-                                .frame(width: screen.width / 2.5)
+                                .frame(width: screen.width / 2.5, height: screen.width / 2)
+                                .clipped()
                             
                             MovieInfoSubheadline(movie: movie)
                             

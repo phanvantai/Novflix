@@ -15,7 +15,7 @@ struct TrailerList: View {
     
     var body: some View {
         VStack {
-            ForEach(trailers) { trailer in
+            ForEach(trailers, id: \.id) { trailer in
                 VStack(alignment: .leading) {
                     VideoPreviewImage(imageURL: trailer.thumbnailImageURL, videoURL: trailer.videoURL)
                         .frame(maxWidth: screen.width)
